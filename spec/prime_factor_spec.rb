@@ -6,6 +6,10 @@ describe PrimeFactor do
       it 'Should return an empty list when input is a negative number' do
         expect(PrimeFactor.check(-1)).to eq([])
       end
+
+      it 'Should return an empty list when input is zero' do
+        expect(PrimeFactor.check(0)).to eq([])
+      end
     end
   end
 end
