@@ -11,5 +11,11 @@ describe PrimeFactor do
         expect(PrimeFactor.check(0)).to eq([])
       end
     end
+
+    context 'Valid Numbers' do
+      it 'Should return an empty list when there are no prime factors' do
+        expect(PrimeFactor.check(1)).to eq([])
+      end
+    end
   end
 end
