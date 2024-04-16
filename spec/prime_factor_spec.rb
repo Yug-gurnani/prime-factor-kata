@@ -19,7 +19,11 @@ describe PrimeFactor do
 
       it 'should return list of prime factors when the input is 2' do
         expect(PrimeFactor.check(2)).to eq([2])
-      end      
+      end
+
+      it 'should return list of prime factors when the input is 3' do
+        expect(PrimeFactor.check(3)).to eq([3])
+      end 
     end
   end
 end
