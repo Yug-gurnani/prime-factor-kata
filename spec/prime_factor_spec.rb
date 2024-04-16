@@ -28,6 +28,10 @@ describe PrimeFactor do
       it 'should return list of prime factors when the input is 4' do
         expect(PrimeFactor.check(4)).to eq([2,2])
       end 
+
+      it 'should return list of prime factors when the input have multiple prime factors' do
+        expect(PrimeFactor.check(6)).to eq([2,3])
+      end 
     end
   end
 end

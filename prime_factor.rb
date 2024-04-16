@@ -2,12 +2,12 @@ class PrimeFactor
   def self.check(number)
     return [] if number <= 0
     prime_factors = []
-    while number%2 == 0
-      prime_factors << 2
-      number = number/2
+    for i in (2..number)
+      while number % i == 0
+        prime_factors.push(i)
+        number = number / i
+      end
     end
-
-    return [3] if number == 3
     prime_factors
   end
 end
