@@ -16,6 +16,10 @@ describe PrimeFactor do
       it 'Should return an empty list when there are no prime factors' do
         expect(PrimeFactor.check(1)).to eq([])
       end
+
+      it 'should return list of prime factors when the input is 2' do
+        expect(PrimeFactor.check(2)).to eq([2])
+      end      
     end
   end
 end

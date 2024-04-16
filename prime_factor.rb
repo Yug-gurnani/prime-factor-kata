@@ -1,5 +1,7 @@
 class PrimeFactor
   def self.check(number)
-    return []
+    return [2] if number == 2
+
+    []
   end
 end
